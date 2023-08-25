@@ -1,0 +1,16 @@
+<div class="bg-primary">
+  <div class="px-4 overflow-hidden" *ngIf="isNotRsgisterComponent && isNotLoginComponent">
+        <app-header ></app-header>
+  </div>
+</div>
+  <div class="row">
+    <div class="col-2" *ngIf="isNotRsgisterComponent && isNotLoginComponent">
+      <app-sidebar ></app-sidebar>
+    </div>
+    <div class="{{isNotRsgisterComponent && isNotLoginComponent ? 'col-md-10': 'col-md-12'}}">
+      <!-- Main Content -->
+      <router-outlet></router-outlet>
+
+    </div>
+  </div>
+

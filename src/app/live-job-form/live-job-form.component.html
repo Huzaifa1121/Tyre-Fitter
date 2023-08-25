@@ -1,0 +1,64 @@
+<div class="container h-100">
+    <div class="row align-items-center h-100">
+      <div class="col-md-6 mx-auto">
+        <div class="p-4 rounded border shadow">
+
+          <form (ngSubmit)="submitForm()" #liveJobForm="ngForm">
+            <div class="row g-3">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="customerLocation" class="form-label">Customer Location</label>
+                  <input type="text" class="form-control" id="customerLocation" name="customerLocation" ngModel required>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="driverAssignment" class="form-label">Driver Assignment</label>
+                  <input type="text" class="form-control" id="driverAssignment" name="driverAssignment" ngModel required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                    <label for="TyreType" class="form-label">Tyre Type</label>
+                    <select class="form-control" id="TyreType" name="TyreType" ngModel required>
+                      <option value="radial">Radial</option>
+                      <option value="bias-ply">Bias Ply</option>
+                      <option value="winter">Winter</option>
+                      <!-- Add more Tyre types as needed -->
+                    </select>
+                  </div>
+              </div>
+  
+              
+              <div class="col-md-6">
+                <div class="form-group">
+                    <label for="vehicleType" class="form-label">Vehicle Type</label>
+                    <select class="form-control" id="vehicleType" name="vehicleType" ngModel required>
+                      <option value="sedan">Sedan</option>
+                      <option value="truck">Truck</option>
+                      <option value="suv">SUV</option>
+                      <!-- Add more vehicle types as needed -->
+                    </select>
+                  </div>
+              </div>
+              
+  
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="Details" class="form-label">Details</label>
+                  <textarea class="form-control" id="Details" name="Details" ngModel required></textarea>
+                </div>
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="col-md-12">
+                <button type="submit" class="btn btn-primary btn-block mt-3">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,17 @@
+.custom-footer{
+    ul{
+        li{
+            a {
+
+                color: #ffffff;
+                text-decoration: none; 
+                transition: color 0.2s; 
+              
+                &:hover {
+                  color: #c3002f; 
+                }
+              }
+        }
+    }
+    
+}

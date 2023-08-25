@@ -1,0 +1,37 @@
+#sidebar {
+  height: 100vh; 
+  color: #fff; 
+  padding-top: 20px;
+
+  .sidebar-header {
+    text-align: center;
+    padding: 20px;
+    img {
+        max-width: 48px; /* Set the maximum width for the logo */
+        height: auto;
+    }
+  }
+
+  .list-unstyled {
+    padding: 0;
+
+    li {
+      padding: 10px 20px;
+      a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        font-size: 17px;
+        &:hover {
+          color: rgb(83, 14, 136); /* Highlight color on hover */
+        }i{
+            font-size: 22px;
+            width: 100%;
+            max-width: 30px;
+
+        }
+       
+      }
+    }
+  }
+}

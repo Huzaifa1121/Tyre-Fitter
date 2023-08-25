@@ -1,0 +1,44 @@
+<div class="container h-100">
+    <div class="row align-items-center h-100">
+      <div class="col-md-6 mx-auto">
+        <div class="p-4 rounded border shadow">
+  
+          <form (ngSubmit)="submitForm()" #discountForm="ngForm">
+            <div class="row g-3">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="jobNumber" class="form-label">Job Number</label>
+                  <input type="text" class="form-control" id="jobNumber" name="jobNumber" ngModel required>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="extraServices" class="form-label">Extra Services</label>
+                  <textarea class="form-control" id="extraServices" name="extraServices" ngModel></textarea>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="discount" class="form-label">Discount </label>
+                  <input type="text" class="form-control" id="discount" name="discount" ngModel>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="notes" class="form-label">Notes</label>
+                  <textarea class="form-control" id="notes" name="notes" ngModel></textarea>
+                </div>
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="col-md-12">
+                <button type="submit" class="btn btn-primary btn-block mt-3">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
